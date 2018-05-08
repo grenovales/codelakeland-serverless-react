@@ -16,7 +16,7 @@ module.exports = merge(common, {
   devtool: 'cheap-module-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'M2GEN Intranet',
+      title: 'Code Lakeland Example 1',
       template: 'src/template.ejs',
       minify: {
         removeComments: true,

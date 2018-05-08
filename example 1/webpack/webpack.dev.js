@@ -23,7 +23,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'M2GEN Intranet - Development',
+      title: 'Code Lakeland Example 1 - Development',
       template: 'src/template.ejs'
     }),
     new webpack.DefinePlugin({
