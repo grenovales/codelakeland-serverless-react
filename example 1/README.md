@@ -48,4 +48,4 @@ npm start
 ```sh
 npm run build
 ```
-6. Upload contens of the dist folder
+6. Upload contens of the dist folder to S3 and create CloudFront distribution [AWS Docs](https://aws.amazon.com/blogs/mobile/deploy-a-react-app-to-s3-and-cloudfront-with-aws-mobile-hub/)
