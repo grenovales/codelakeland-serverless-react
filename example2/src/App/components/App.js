@@ -9,12 +9,15 @@ import './styles/App.css';
 
 import bckVideo from './videos/bg.mp4';
 import posterImg from './images/bg-mobile-fallback.jpg';
-import { Button } from 'reactstrap';
+import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap';
 
 /* eslint jsx-a11y/media-has-caption: 0 */
 const App = (props) => {
   const {
-    handleSubmit
+    OpenModal,
+    ModalMessage,
+    handleSubmit,
+    closeModal
   } = props;
 
   return (
@@ -35,26 +38,41 @@ const App = (props) => {
                   className="mb-5">{"We're working hard to finish the development of this site. Our target launch date is "}
                   <strong>January 2019</strong>! Sign up for updates using the form below!
                 </p>
-                <div className="input-group input-group-newsletter">
-                  <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit}>
+                  <div className="input-group input-group-newsletter">
                     <input type="email" className="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon" />
                     <div className="input-group-append">
                       <Button className="btn btn-secondary" type="submit">Notify Me!</Button>
                     </div>
-                  </form>
-                </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Modal isOpen={OpenModal}>
+        <ModalBody>
+          {ModalMessage}
+        </ModalBody>
+        <ModalFooter>
+          <Button color="primary" onClick={closeModal}>Ok</Button>
+        </ModalFooter>
+      </Modal>
     </div>
   );
 };
 
 App.propTypes = {
-  handleSubmit: PropTypes.func.isRequired
+  handleSubmit: PropTypes.func.isRequired,
+  closeModal: PropTypes.func.isRequired,
+  OpenModal: PropTypes.bool,
+  ModalMessage: PropTypes.string
 };
 
+App.defaultProps = {
+  OpenModal: false,
+  ModalMessage: ''
+};
 
 export default App;
