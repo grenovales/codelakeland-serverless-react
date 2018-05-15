@@ -17,7 +17,9 @@ const App = (props) => {
     OpenModal,
     ModalMessage,
     handleSubmit,
-    closeModal
+    closeModal,
+    EmailChange,
+    email
   } = props;
 
   return (
@@ -40,7 +42,14 @@ const App = (props) => {
                 </p>
                 <form onSubmit={handleSubmit}>
                   <div className="input-group input-group-newsletter">
-                    <input type="email" className="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon" />
+                    <input
+                      type="email"
+                      className="form-control"
+                      onChange={EmailChange}
+                      value={email}
+                      placeholder="Enter email..."
+                      aria-label="Enter email..."
+                      aria-describedby="basic-addon" />
                     <div className="input-group-append">
                       <Button className="btn btn-secondary" type="submit">Notify Me!</Button>
                     </div>
@@ -66,13 +75,16 @@ const App = (props) => {
 App.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
   closeModal: PropTypes.func.isRequired,
+  EmailChange: PropTypes.func.isRequired,
   OpenModal: PropTypes.bool,
-  ModalMessage: PropTypes.string
+  ModalMessage: PropTypes.string,
+  email: PropTypes.string
 };
 
 App.defaultProps = {
   OpenModal: false,
-  ModalMessage: ''
+  ModalMessage: '',
+  email: ''
 };
 
 export default App;
