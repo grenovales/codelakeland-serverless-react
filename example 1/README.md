@@ -2,7 +2,7 @@
 
 ### Purpose ###
 
-Example 1 for Code Lakeland Meetup
+Example 1 for Code Lakeland Meetup [Live Demo](https://d90npuuyi750m.cloudfront.net)
 
 ### Dependencies ###
 
