@@ -1,5 +1,8 @@
-# Serveless React Aplications using AWS
-## Code Lakeland Meetup
+# Serveless React Applications using AWS
+
+### Architecture
+
+![alt text](/serverless.png "Serverless Basic Architecture")
 
 ### IDE
 
@@ -9,7 +12,7 @@ This code as developed using [VSCode](https://code.visualstudio.com) but any IDE
 
 #### VSCode
 
-You should be fine all configurations to debug the examples are already included in this repository. However here's the link to configure VSCode for debuggin. https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_debugging-react
+You should be fine all configurations to debug the examples are already included in this repository. However here's the link to configure VSCode for debugging. https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_debugging-react
 
 #### The Rest
 
@@ -25,10 +28,12 @@ To learn more about React follow this link https://reactjs.org
 
 ### AWS
 
-You can adapt this example to run on other cloud providers, however this was developed for AWS.
+You can adapt this example to run on other cloud providers, however, this was developed for AWS.
 
 ### Examples
 [Example 1 - Hello React](https://github.com/camazorro/codelakeland-serverless-react/tree/master/example%201)
 
 [Example 2 - Landing Page](https://github.com/camazorro/codelakeland-serverless-react/tree/master/example%202)
 
+## Resources
+* [Learn to Build Full-Stack Apps with Serverless and React on AWS](https://serverless-stack.com)
