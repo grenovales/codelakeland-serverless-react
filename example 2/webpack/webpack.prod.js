@@ -1,7 +1,3 @@
-/**
- * Embers Project Webpack Development Configuration
- */
-const webpack = require('webpack');
 const path = require('path');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
@@ -31,10 +27,6 @@ module.exports = merge(common, {
         minifyCSS: true,
         minifyURLs: true
       }
-    }),
-    new webpack.DefinePlugin({
-      __API_HOST__: JSON.stringify('https://api.m2gen.com/'),
-      __API_VERSION__: JSON.stringify('v1')
     }),
     new CompressionPlugin({
       asset: '[path].gz[query]',

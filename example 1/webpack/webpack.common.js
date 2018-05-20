@@ -1,6 +1,4 @@
-/**
- * Embers Project Webpack Common Configuration
- */
+
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
 

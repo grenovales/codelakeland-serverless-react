@@ -1,6 +1,3 @@
-/**
- * Embers Project Webpack Development Configuration
- */
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
@@ -25,10 +22,6 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
       title: 'Code Lakeland Example 2 - Development',
       template: 'src/template.ejs'
-    }),
-    new webpack.DefinePlugin({
-      __API_HOST__: JSON.stringify('https://api-dev.m2gen.com/'),
-      __API_VERSION__: JSON.stringify('v1')
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
