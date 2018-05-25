@@ -1,0 +1,28 @@
+{
+  "name": "io.transcribing.api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.245.1",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-source-map-support": "^2.0.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "serverless-offline": "^3.23.1",
+    "serverless-webpack": "^5.1.5",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.4",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "uuid": "^3.2.1"
+  }
+}
